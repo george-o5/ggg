@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>registration</h2>
+    <form id="jsform">
+      <div class="cssform">
+        <label>name:</label>
+        <input type="text" id="nameid" name="name" />
+        <br />
+        <label>age:</label>
+        <input type="number" id="ageid" name="age" />
+        <br />
+        <label>DOB:</label>
+        <input type="date" id="dobid" name="dob" />
+        <br />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <script>
+      // Get the form element
+      const form = document.getElementById("jsform");
+
+      // Add event listener for form submission
+      form.addEventListener("submit", function (event) {
+        // Prevent form from actually submitting
+        event.preventDefault();
+
+        // Show popup message
+        alert("Successfully registered!");
+      });
+    </script>
+  </body>
+</html>
